@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function is_usZipCode(str) {
+        regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if(regexp.test(str)){
+            return true;
+        }else {return false;}
+    }
+    let str = "03201-2988";
+    console.log(is_usZipCode(str))
+</script>
+</body>
+</html>
